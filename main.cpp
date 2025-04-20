@@ -7,7 +7,7 @@ int main() {
     char name[20];
     int type;
     int response;
-    cout<<"Welcome to Heist Role-Playing Game!"<<endl;
+    cout<<"Welcome to Heist RPG!"<<endl;
     cout<<"Please, choose a name for yourself."<<endl;
     cout<<"Your name: ";
     cin>>name;
