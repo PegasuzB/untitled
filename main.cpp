@@ -1,12 +1,35 @@
 #include <iostream>
 #include<string>
+#include <chrono>
+#include <thread>
 using namespace std;
-
+using namespace chrono;
+using namespace this_thread;
+int charisma, dexterity, strength, constitution, intelligence, wisdom;
+int Ability_points = 10;
 int main() {
+    int play_exit;
+    do {
+        cout<<"\t\t\t-------------------------------------------------------------------------"<<endl;
+        cout<<"\t\t\t|\t\t\t\t\t\tWelcome to the Heist RPG!\t\t\t\t\t\t|"<<endl;
+        cout<<"\t\t\t|\t\t\t\t\t\t\t\t1. PLAY\t\t\t\t\t\t\t\t\t|"<<endl;
+        cout<<"\t\t\t|\t\t\t\t\t\t\t\t2. EXIT\t\t\t\t\t\t\t\t\t|"<<endl;
+        cout<<"\t\t\t-------------------------------------------------------------------------"<<endl;
+        cout<<"Your choice: ";
+        cin>>play_exit;
+        if(play_exit == 1) {
+            break;
+        }
+        if(play_exit == 2) {
+            cout<<"Well, Okay. You know better.\nBye!";
+            return 0;
+        }
+    }while(play_exit !=1 or play_exit !=2);
     //introduction
     char name[20];
     int type;
     int response;
+    sleep_for(milliseconds(100));
     cout<<"Welcome to Heist RPG!"<<endl;
     cout<<"Please, choose a name for yourself."<<endl;
     cout<<"Your name: ";
@@ -16,7 +39,7 @@ int main() {
 
     //game start, act 1,day 1
     cout<<" DAY 1"<<endl;
-    cout<<name<<", you wake up in your messy bedroom in the morning. Sun is shining right through the curtains. Everything stays still as you left the day before. You have not been able to look after your house due to work pressure experienced these recent days. You promised yourself to take a break from your work and go to vacation after finishing your last big project. The day begins as always: you eat cereals for breakfast, change your clothes immediately while thinking on how to hande the project. "<<endl;
+    cout<<name<<", you wake up in your messy bedroom in the morning. Sun is shining right through the curtains. Everything stays still as you left the day before.\nYou have not been able to look after your house due to work pressure experienced these recent days. You promised yourself to take a break from your work and go to vacation after finishing your last big project.\nThe day begins as always: you eat cereals for breakfast, change your clothes immediately while thinking on how to hande the project. "<<endl;
 cout<<" "<<endl;
     cout<<"Choose a vehicle to go to work:"<<endl;
     cout<<"A.Your car"<<endl;
@@ -30,9 +53,9 @@ cout<<" "<<endl;
     cout<<"You meet your colleagues. David warmly greets you. He apologises for leaving early yesterday without completing project and explains he had something urgent came up.";
 cout<<" "<<endl;
     cout<<"Your response will be as:"<<endl;
-    cout<<"a.understanding and caring friend\nb.selfish and tired of excuses colleague\nYour choice:"<<endl;
-    // cout<<"b.selfish and tired of excuses colleague"<<endl;
-    // cout<<"Your choice:"<<endl;
+    cout<<"a.understanding and caring friend"<<endl;
+    cout<<"b.selfish and tired of excuses colleague"<<endl;
+    cout<<"Your choice:"<<endl;
     cin>>response;
     cout<<response;
     if (response=='a') {
