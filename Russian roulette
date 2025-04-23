@@ -1,0 +1,26 @@
+int math(int user_answer){
+    int math_random1 = rand()%20 + 1;
+    int math_random2 = rand()%20 + 1;
+    int operator = rand()%4 + 1;
+    int correct_answer;
+    switch(operator){
+        case 1:
+            correct_answer = math_random1 + math_random2;
+            break;
+        case 2:
+            correct_answer = math_random1 - math_random2;
+            break;
+        case 3:
+            correct_answer = math_random1 * math_random2;
+            break;
+        case 4:
+            correct_answer = math_random1 / math_random2;
+            break;
+    }
+    if(user_answer == correct_answer){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
