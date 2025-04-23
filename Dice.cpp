@@ -9,9 +9,9 @@ int Dice(int max_num) {
     return dice;
 }
 int roll_dice(int Die_num) {
-    srand(time(0));
+    srand(time(NULL));
     return Dice(Die_num);
 }
 int main() {
-    cout<<roll_dice(20);
+    cout << roll_dice(20) << endl;
 }

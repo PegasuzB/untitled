@@ -2,10 +2,13 @@
 #include<string>
 #include <chrono>
 #include <thread>
+#include "Dice.h"
 using namespace std;
 using namespace chrono;
 using namespace this_thread;
-int charisma, dexterity, strength, constitution, intelligence, wisdom;
+using namespace Dice;
+//Strength - 0; Dexterity - 1; Constitution - 2; Intelligence - 3; Wisdom - 4; Charisma - 5;
+int Ability_scores[6];
 int Ability_points = 10;
 int main() {
     int play_exit;
@@ -27,8 +30,8 @@ int main() {
     }while(play_exit !=1 or play_exit !=2);
     //introduction
     char name[20];
-    int type;
-    int response;
+    string type;
+    string response;
     sleep_for(milliseconds(100));
     cout<<"Welcome to Heist RPG!"<<endl;
     cout<<"Please, choose a name for yourself."<<endl;
@@ -58,10 +61,10 @@ cout<<" "<<endl;
     cout<<"Your choice:"<<endl;
     cin>>response;
     cout<<response;
-    if (response=='a') {
+    if (response == "a") {
         cout<<"Great. Friends need supporting."<<endl;
     }
-      if (response=='b') {
+      if (response == "b") {
         cout<<"Great. "<<endl;
     }
 cout<<" "<<endl;
@@ -74,7 +77,7 @@ cout<<" "<<endl;
     cout<<"You are currently not in a relationship. You really like the girl who works at the registration desk."<<endl;
     cout<<"Will you invite her to dinner? (yes or no)"<<endl;
     cin>>response;
-    if (response=='yes') {
+    if (response == "yes") {
         cout<<"";
     }
     //charisma check

@@ -1,8 +1,4 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <chrono>
-#include <thread>
+#include "Act 1.cpp"
 using namespace std;
 using namespace chrono;
 using namespace this_thread;
@@ -350,64 +346,3 @@ void dayThree(Player& player) {
     }
 }
 
-int main() {
-    Player player;
-    player.Strength = 10;
-    player.Dexterity = 8;
-    player.Constitution = 10;
-    player.Intelligence = 7;
-    player.Wisdom = 6;
-    player.Charisma = 9;
-    player.reputation = 0;
-
-    printStats(player);
-    dayOne(player);
-
-    sleep_for(milliseconds(100));
-    cout << "\nYou made it through Day 1!\n";
-    dayTwo(player);
-
-    if (player.injured) {
-        sleep_for(milliseconds(100));
-        cout << "\nYou are too injured to continue.\n";
-        cout << "=============================================" << endl;
-        cout << "\t\t\t\t Game Over." << endl;
-        cout << "=============================================" << endl;
-        return 0;
-    }
-    else if (player.inIsolation) {
-        sleep_for(milliseconds(100));
-        cout << "\nYou were sent to isolation. Game Over.\n";
-        cout << "=============================================" << endl;
-        cout << "\t\t\t\t Game Over." << endl;
-        cout << "=============================================" << endl;
-        return 0;
-    }
-    sleep_for(milliseconds(100));
-    cout << "\nYou made it through Day 2!\n";
-    dayThree(player);
-
-    if (player.injured) {
-        sleep_for(milliseconds(100));
-        cout << "\nYour escape failed due to injury.\n";
-        cout << "=============================================" << endl;
-        cout << "\t\t\t\t Game Over." << endl;
-        cout << "=============================================" << endl;
-    }
-    else if (player.inIsolation) {
-        sleep_for(milliseconds(100));
-        cout << "\nYou were caught and placed in isolation.\n";
-        cout << "=============================================" << endl;
-        cout << "\t\t\t\t Game Over." << endl;
-        cout << "=============================================" << endl;
-    }
-    else {
-        sleep_for(milliseconds(100));
-        cout << "\nCongratulations! You escaped and survived the journey.\n";
-        cout << "=============================================" << endl;
-        cout << "\t\t\t\t Victory!" << endl;
-        cout << "=============================================" << endl;
-    }
-
-    return 0;
-}
