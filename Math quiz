@@ -1,22 +1,27 @@
-int math(int user_answer){
+int math(){
     int math_random1 = rand()%20 + 1;
     int math_random2 = rand()%20 + 1;
     int operator = rand()%4 + 1;
-    int correct_answer;
+    int correct_answer, user_answer;
     switch(operator){
         case 1:
             correct_answer = math_random1 + math_random2;
+            cout<<math_random1<<" + "<<math_random2<<" = ";
             break;
         case 2:
             correct_answer = math_random1 - math_random2;
+            cout<<math_random1<<" - "<<math_random2<<" = ";
             break;
         case 3:
             correct_answer = math_random1 * math_random2;
+            cout<<math_random1<<" * "<<math_random2<<" = ";
             break;
         case 4:
             correct_answer = math_random1 / math_random2;
+            cout<<math_random1<<" / "<<math_random2<<" = ";
             break;
     }
+    cin>>user_answer;
     if(user_answer == correct_answer){
         return true;
     }
