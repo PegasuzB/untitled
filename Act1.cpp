@@ -1,37 +1,19 @@
-#include <iostream>
-#include<string>
-#include <chrono>
-#include <thread>
-#include "Dice.h"
+//
+// Created by Mubina Asadova on 23/04/25.
+//
+
+#include "Act1.h"
 using namespace std;
 using namespace chrono;
 using namespace this_thread;
-using namespace Dice;
-//Strength - 0; Dexterity - 1; Constitution - 2; Intelligence - 3; Wisdom - 4; Charisma - 5;
-int Ability_scores[6];
+int charisma, dexterity, strength, constitution, intelligence, wisdom;
 int Ability_points = 10;
 int main() {
-    int play_exit;
-    do {
-        cout<<"\t\t\t-------------------------------------------------------------------------"<<endl;
-        cout<<"\t\t\t|\t\t\t\t\t\tWelcome to the Heist RPG!\t\t\t\t\t\t|"<<endl;
-        cout<<"\t\t\t|\t\t\t\t\t\t\t\t1. PLAY\t\t\t\t\t\t\t\t\t|"<<endl;
-        cout<<"\t\t\t|\t\t\t\t\t\t\t\t2. EXIT\t\t\t\t\t\t\t\t\t|"<<endl;
-        cout<<"\t\t\t-------------------------------------------------------------------------"<<endl;
-        cout<<"Your choice: ";
-        cin>>play_exit;
-        if(play_exit == 1) {
-            break;
-        }
-        if(play_exit == 2) {
-            cout<<"Well, Okay. You know better.\nBye!";
-            return 0;
-        }
-    }while(play_exit !=1 or play_exit !=2);
+
     //introduction
     char name[20];
-    string type;
-    string response;
+    int type;
+    int response;
     sleep_for(milliseconds(100));
     cout<<"Welcome to Heist RPG!"<<endl;
     cout<<"Please, choose a name for yourself."<<endl;
@@ -61,10 +43,10 @@ cout<<" "<<endl;
     cout<<"Your choice:"<<endl;
     cin>>response;
     cout<<response;
-    if (response == "a") {
+    if (response=='a') {
         cout<<"Great. Friends need supporting."<<endl;
     }
-      if (response == "b") {
+      if (response=='b') {
         cout<<"Great. "<<endl;
     }
 cout<<" "<<endl;
@@ -77,7 +59,7 @@ cout<<" "<<endl;
     cout<<"You are currently not in a relationship. You really like the girl who works at the registration desk."<<endl;
     cout<<"Will you invite her to dinner? (yes or no)"<<endl;
     cin>>response;
-    if (response == "yes") {
+    if (response=='yes') {
         cout<<"";
     }
     //charisma check

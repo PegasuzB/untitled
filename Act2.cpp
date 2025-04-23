@@ -1,25 +1,25 @@
-#include "Act 1.cpp"
+//
+// Created by Mubina Asadova on 23/04/25.
+//
+
+#include "Act2.h"
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <chrono>
+#include <thread>
+#include "Act1.cpp"
 using namespace std;
 using namespace chrono;
 using namespace this_thread;
 
-struct Player {
-    int Strength;
-    int Dexterity;
-    int Constitution;
-    int Intelligence;
-    int Wisdom;
-    int Charisma;
-    bool injured;
-    bool inIsolation;
-    int reputation;
-};
+
 
 void printStats(const Player& p);
 void goToLibrary(Player& player);
 void goToGym(Player& player);
-void dayOne(Player& player);
-void dayTwo(Player& player);
+void act2_day1(Player& player);
+void act2_day2(Player& player);
 
 void printStats(const Player& p) {
     sleep_for(milliseconds(100));
@@ -67,21 +67,28 @@ void goToGym(Player& player) {
 }
 
 
-void dayOne(Player& player) {
+void act2_day1(Player& player) {
     sleep_for(milliseconds(100));
-    cout << "\n\n=======================================================================================================================\n";
-    cout << "\t\t Day 1: You wake up on a mattress so thin you can feel every crack in the concrete beneath it.\n";
+    cout << "Day 1:\n";
+    sleep_for(milliseconds(100));
+    cout<<"\t\t\tYou wake up on a mattress so thin you can feel every crack in the concrete beneath it.\n";
     sleep_for(milliseconds(100));
     cout << "\t\t\t\t The air is stale, heavy with bleach and something metallic, like rusted hope.\n";
     sleep_for(milliseconds(100));
     cout << "\tA weak strip of light buzzes overhead, and for a second, you forget where you are—until the silence reminds you.\n";
-    cout << "=======================================================================================================================\n";
     sleep_for(milliseconds(100));
-    cout << "A tray is slid through the slot. You're told you can choose today’s breakfast: cereal or toast.\n";
+    cout << "\nA tray is slid through the slot. You're told you can choose today’s breakfast: cereal or toast.\n";
+
 
     string breakfast1;
     cout << "Choose your breakfast: (cereal / toast): ";
     cin >> breakfast1;
+    while (breakfast1 != "cereal" && breakfast1 != "toast") {
+        cout << "Invalid option. Please choose either 'cereal' or 'toast': ";
+        cin >> breakfast1;
+    }
+
+    cout << "You chose: " << breakfast1 << endl;
 
     sleep_for(milliseconds(100));
     cout << "\nYou unwrap the foil. It’s plain cereal. It was always going to be cereal.\n";
@@ -90,6 +97,13 @@ void dayOne(Player& player) {
     string location;
     cout << "Where do you want to go? (yard/library): ";
     cin >> location;
+    while (location != "yard" && location != "library") {
+        cout << "Invalid option. Please choose either 'yard' or 'library': ";
+        cin >> location;
+    }
+
+    cout << "You are going to the " << location << endl;
+
 
     if (location == "library") {
         goToLibrary(player);
@@ -98,9 +112,12 @@ void dayOne(Player& player) {
 
     else if (location == "yard") {
         sleep_for(milliseconds(100));
-        cout << "\nYou go to the yard. You meet some people and ask around about others.\n";
+        cout << "\n\t\tYou step out into the yard, the morning sun casting long shadows over the uneven ground.\n";
+        cout<<"\t\t  A few people mill about—some sharpening tools, others speaking in low, guarded tones. \n";
+        cout<<"You approach a small group, nodding in greeting, and begin to ask carefully worded questions about those who aren’t present,\n";
+        cout<<"  watching their faces for the flicker of recognition or hesitation that might tell you more than their words ever could.\n";
         string choice;
-        cout << "A big guy insults you. Do you want to fight him? (yes/no): ";
+        cout << "\nA big guy insults you. Do you want to fight him? (yes/no): ";
         cin >> choice;
 
         if (choice == "no") {
@@ -191,12 +208,11 @@ void dayOne(Player& player) {
     }
 }
 
-void dayTwo(Player& player) {
+void act2_day2(Player& player) {
     sleep_for(milliseconds(100));
-    cout << "\n\n============================================================================================================================\n";
-    cout << "\t\t\t\t\t\tDay 2: You wake to the sound of boots echoing down the hall, ";
-    cout<<" each step sharp and deliberate, reverberating through the stillness of the early morning.";
-    cout << "=================================================================================================================================\n";
+    cout<<"Day 2:\n";
+    cout <<"\t\t\t You wake to the sound of boots echoing down the hall, \n";
+    cout<<"each step sharp and deliberate, reverberating through the stillness of the early morning.\n";
 
     sleep_for(milliseconds(100));
     cout << "\nThe guard offers a cheerful, \"Pancakes or porridge today?\"\n";
@@ -204,6 +220,12 @@ void dayTwo(Player& player) {
     string breakfast2;
     cout << "Choose your breakfast: (pancakes / porridge): ";
     cin >> breakfast2;
+    while (breakfast2 != "pancakes" && breakfast2 != "porridge") {
+        cout << "Invalid option. Please choose one of them: ";
+        cin >> breakfast2;
+    }
+
+    cout << "You chose: " << breakfast2 << endl;
 
     sleep_for(milliseconds(100));
     cout << "\nYou lift the lid. It's porridge. Cold, lumpy, and familiar.\n";
@@ -217,6 +239,12 @@ void dayTwo(Player& player) {
     string fakeChoice;
     cout << "Choose your preference: (yard / room): ";
     cin >> fakeChoice;
+    while (fakeChoice != "yard" && fakeChoice != "room") {
+        cout << "Invalid option. You can go either to the yard or the room: ";
+        cin >> fakeChoice;
+    }
+
+    cout << "You chose: " << fakeChoice << endl;
 
     sleep_for(milliseconds(100));
     cout << "\nThe guards glance at your form, then bark, \"Everyone out.\"\n";
@@ -256,11 +284,9 @@ void dayTwo(Player& player) {
     cout << "\nYou return to your room and go to sleep, wondering what tomorrow will bring...\n";
 }
 
-void dayThree(Player& player) {
+void act2_day3(Player& player) {
     sleep_for(milliseconds(100));
-    cout << "\n\n============================================================================\n";
     cout << "Day 3: You wake up feeling the weight of the week settle into your bones.\n";
-    cout << "===========================================================================\n";
 
     sleep_for(milliseconds(100));
     cout << "\nThey ask, just like always: \"Want eggs or oatmeal?\"\n";
@@ -268,6 +294,12 @@ void dayThree(Player& player) {
     string breakfast3;
     cout << "Choose your breakfast: (eggs / oatmeal): ";
     cin >> breakfast3;
+    while (breakfast3 != "eggs" && breakfast3 != "oatmeal") {
+        cout << "Invalid option. You can eat only one of them: ";
+        cin >> breakfast3;
+    }
+
+    cout << "You chose: " << breakfast3 << endl;
 
     sleep_for(milliseconds(100));
     cout << "\nYou get oatmeal. No one gets eggs. Maybe no one ever did.\n";
@@ -346,3 +378,64 @@ void dayThree(Player& player) {
     }
 }
 
+int main() {
+    Player player;
+    player.Strength = 10;
+    player.Dexterity = 8;
+    player.Constitution = 10;
+    player.Intelligence = 7;
+    player.Wisdom = 6;
+    player.Charisma = 9;
+    player.reputation = 0;
+
+    printStats(player);
+    act2_day1(player);
+
+    sleep_for(milliseconds(100));
+    cout << "\nYou made it through Day 1!\n";
+    act2_day2(player);
+
+    if (player.injured) {
+        sleep_for(milliseconds(100));
+        cout << "\nYou are too injured to continue.\n";
+        cout << "=============================================" << endl;
+        cout << "\t\t\t\t Game Over." << endl;
+        cout << "=============================================" << endl;
+        return 0;
+    }
+    else if (player.inIsolation) {
+        sleep_for(milliseconds(100));
+        cout << "\nYou were sent to isolation. Game Over.\n";
+        cout << "=============================================" << endl;
+        cout << "\t\t\t\t Game Over." << endl;
+        cout << "=============================================" << endl;
+        return 0;
+    }
+    sleep_for(milliseconds(100));
+    cout << "\nYou made it through Day 2!\n";
+    act2_day3(player);
+
+    if (player.injured) {
+        sleep_for(milliseconds(100));
+        cout << "\nYour escape failed due to injury.\n";
+        cout << "=============================================" << endl;
+        cout << "\t\t\t\t Game Over." << endl;
+        cout << "=============================================" << endl;
+    }
+    else if (player.inIsolation) {
+        sleep_for(milliseconds(100));
+        cout << "\nYou were caught and placed in isolation.\n";
+        cout << "=============================================" << endl;
+        cout << "\t\t\t\t Game Over." << endl;
+        cout << "=============================================" << endl;
+    }
+    else {
+        sleep_for(milliseconds(100));
+        cout << "\nCongratulations! You escaped and survived the journey.\n";
+        cout << "=============================================" << endl;
+        cout << "\t\t\t\t Victory!" << endl;
+        cout << "=============================================" << endl;
+    }
+
+    return 0;
+}

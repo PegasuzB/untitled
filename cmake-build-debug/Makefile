@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/s.toshtemirov/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /Users/m.asadova/CLionProjects/act3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/s.toshtemirov/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/m.asadova/CLionProjects/act3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/s.toshtemirov/CLionProjects/untitled/cmake-build-debug/CMakeFiles /Users/s.toshtemirov/CLionProjects/untitled/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles /Users/m.asadova/CLionProjects/act3/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/s.toshtemirov/CLionProjects/untitled/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,53 +129,125 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
-Act_1.o: Act_1.cpp.o
-.PHONY : Act_1.o
+Act1.o: Act1.cpp.o
+.PHONY : Act1.o
 
 # target to build an object file
-Act_1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_1.cpp.o
-.PHONY : Act_1.cpp.o
+Act1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act1.cpp.o
+.PHONY : Act1.cpp.o
 
-Act_1.i: Act_1.cpp.i
-.PHONY : Act_1.i
+Act1.i: Act1.cpp.i
+.PHONY : Act1.i
 
 # target to preprocess a source file
-Act_1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_1.cpp.i
-.PHONY : Act_1.cpp.i
+Act1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act1.cpp.i
+.PHONY : Act1.cpp.i
 
-Act_1.s: Act_1.cpp.s
-.PHONY : Act_1.s
+Act1.s: Act1.cpp.s
+.PHONY : Act1.s
 
 # target to generate assembly for a file
-Act_1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_1.cpp.s
-.PHONY : Act_1.cpp.s
+Act1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act1.cpp.s
+.PHONY : Act1.cpp.s
 
-Act_2.o: Act_2.cpp.o
-.PHONY : Act_2.o
+Act2.o: Act2.cpp.o
+.PHONY : Act2.o
 
 # target to build an object file
-Act_2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_2.cpp.o
-.PHONY : Act_2.cpp.o
+Act2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act2.cpp.o
+.PHONY : Act2.cpp.o
 
-Act_2.i: Act_2.cpp.i
-.PHONY : Act_2.i
+Act2.i: Act2.cpp.i
+.PHONY : Act2.i
 
 # target to preprocess a source file
-Act_2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_2.cpp.i
-.PHONY : Act_2.cpp.i
+Act2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act2.cpp.i
+.PHONY : Act2.cpp.i
 
-Act_2.s: Act_2.cpp.s
-.PHONY : Act_2.s
+Act2.s: Act2.cpp.s
+.PHONY : Act2.s
 
 # target to generate assembly for a file
-Act_2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_2.cpp.s
-.PHONY : Act_2.cpp.s
+Act2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act2.cpp.s
+.PHONY : Act2.cpp.s
+
+Act_3.o: Act_3.cpp.o
+.PHONY : Act_3.o
+
+# target to build an object file
+Act_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_3.cpp.o
+.PHONY : Act_3.cpp.o
+
+Act_3.i: Act_3.cpp.i
+.PHONY : Act_3.i
+
+# target to preprocess a source file
+Act_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_3.cpp.i
+.PHONY : Act_3.cpp.i
+
+Act_3.s: Act_3.cpp.s
+.PHONY : Act_3.s
+
+# target to generate assembly for a file
+Act_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Act_3.cpp.s
+.PHONY : Act_3.cpp.s
+
+Dice.o: Dice.cpp.o
+.PHONY : Dice.o
+
+# target to build an object file
+Dice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Dice.cpp.o
+.PHONY : Dice.cpp.o
+
+Dice.i: Dice.cpp.i
+.PHONY : Dice.i
+
+# target to preprocess a source file
+Dice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Dice.cpp.i
+.PHONY : Dice.cpp.i
+
+Dice.s: Dice.cpp.s
+.PHONY : Dice.s
+
+# target to generate assembly for a file
+Dice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Dice.cpp.s
+.PHONY : Dice.cpp.s
+
+Game.o: Game.cpp.o
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Game.cpp.s
+.PHONY : Game.cpp.s
 
 # Help Target
 help:
@@ -186,12 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled"
-	@echo "... Act_1.o"
-	@echo "... Act_1.i"
-	@echo "... Act_1.s"
-	@echo "... Act_2.o"
-	@echo "... Act_2.i"
-	@echo "... Act_2.s"
+	@echo "... Act1.o"
+	@echo "... Act1.i"
+	@echo "... Act1.s"
+	@echo "... Act2.o"
+	@echo "... Act2.i"
+	@echo "... Act2.s"
+	@echo "... Act_3.o"
+	@echo "... Act_3.i"
+	@echo "... Act_3.s"
+	@echo "... Dice.o"
+	@echo "... Dice.i"
+	@echo "... Dice.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 .PHONY : help
 
 

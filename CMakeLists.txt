@@ -3,6 +3,13 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(untitled "Act 1.cpp"
-        "Act 2.cpp"
-        Dice.h)
+add_executable(untitled
+        Dice.h
+        Game.cpp
+        Act_3.cpp
+        Act_3.h
+        Act2.cpp
+        Act2.h
+        Act1.cpp
+        Act1.h
+        Dice.cpp)

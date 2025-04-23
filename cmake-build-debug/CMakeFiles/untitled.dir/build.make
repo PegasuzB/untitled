@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/m.asadova/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /Users/m.asadova/CLionProjects/act3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/m.asadova/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/m.asadova/CLionProjects/act3/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled.dir/depend.make
@@ -72,47 +72,95 @@ include CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/codegen:
 .PHONY : CMakeFiles/untitled.dir/codegen
 
-CMakeFiles/untitled.dir/Act_1.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/Act_1.cpp.o: /Users/m.asadova/CLionProjects/untitled/Act\ 1.cpp
-CMakeFiles/untitled.dir/Act_1.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/Act_1.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Act_1.cpp.o -MF CMakeFiles/untitled.dir/Act_1.cpp.o.d -o CMakeFiles/untitled.dir/Act_1.cpp.o -c "/Users/m.asadova/CLionProjects/untitled/Act 1.cpp"
+CMakeFiles/untitled.dir/Game.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Game.cpp.o: /Users/m.asadova/CLionProjects/act3/Game.cpp
+CMakeFiles/untitled.dir/Game.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/Game.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Game.cpp.o -MF CMakeFiles/untitled.dir/Game.cpp.o.d -o CMakeFiles/untitled.dir/Game.cpp.o -c /Users/m.asadova/CLionProjects/act3/Game.cpp
 
-CMakeFiles/untitled.dir/Act_1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Act_1.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/m.asadova/CLionProjects/untitled/Act 1.cpp" > CMakeFiles/untitled.dir/Act_1.cpp.i
+CMakeFiles/untitled.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Game.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/m.asadova/CLionProjects/act3/Game.cpp > CMakeFiles/untitled.dir/Game.cpp.i
 
-CMakeFiles/untitled.dir/Act_1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Act_1.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/m.asadova/CLionProjects/untitled/Act 1.cpp" -o CMakeFiles/untitled.dir/Act_1.cpp.s
+CMakeFiles/untitled.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Game.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/m.asadova/CLionProjects/act3/Game.cpp -o CMakeFiles/untitled.dir/Game.cpp.s
 
-CMakeFiles/untitled.dir/Act_2.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/Act_2.cpp.o: /Users/m.asadova/CLionProjects/untitled/Act\ 2.cpp
-CMakeFiles/untitled.dir/Act_2.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Act_2.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Act_2.cpp.o -MF CMakeFiles/untitled.dir/Act_2.cpp.o.d -o CMakeFiles/untitled.dir/Act_2.cpp.o -c "/Users/m.asadova/CLionProjects/untitled/Act 2.cpp"
+CMakeFiles/untitled.dir/Act_3.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Act_3.cpp.o: /Users/m.asadova/CLionProjects/act3/Act_3.cpp
+CMakeFiles/untitled.dir/Act_3.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Act_3.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Act_3.cpp.o -MF CMakeFiles/untitled.dir/Act_3.cpp.o.d -o CMakeFiles/untitled.dir/Act_3.cpp.o -c /Users/m.asadova/CLionProjects/act3/Act_3.cpp
 
-CMakeFiles/untitled.dir/Act_2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Act_2.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/m.asadova/CLionProjects/untitled/Act 2.cpp" > CMakeFiles/untitled.dir/Act_2.cpp.i
+CMakeFiles/untitled.dir/Act_3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Act_3.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/m.asadova/CLionProjects/act3/Act_3.cpp > CMakeFiles/untitled.dir/Act_3.cpp.i
 
-CMakeFiles/untitled.dir/Act_2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Act_2.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/m.asadova/CLionProjects/untitled/Act 2.cpp" -o CMakeFiles/untitled.dir/Act_2.cpp.s
+CMakeFiles/untitled.dir/Act_3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Act_3.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/m.asadova/CLionProjects/act3/Act_3.cpp -o CMakeFiles/untitled.dir/Act_3.cpp.s
+
+CMakeFiles/untitled.dir/Act2.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Act2.cpp.o: /Users/m.asadova/CLionProjects/act3/Act2.cpp
+CMakeFiles/untitled.dir/Act2.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Act2.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Act2.cpp.o -MF CMakeFiles/untitled.dir/Act2.cpp.o.d -o CMakeFiles/untitled.dir/Act2.cpp.o -c /Users/m.asadova/CLionProjects/act3/Act2.cpp
+
+CMakeFiles/untitled.dir/Act2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Act2.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/m.asadova/CLionProjects/act3/Act2.cpp > CMakeFiles/untitled.dir/Act2.cpp.i
+
+CMakeFiles/untitled.dir/Act2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Act2.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/m.asadova/CLionProjects/act3/Act2.cpp -o CMakeFiles/untitled.dir/Act2.cpp.s
+
+CMakeFiles/untitled.dir/Act1.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Act1.cpp.o: /Users/m.asadova/CLionProjects/act3/Act1.cpp
+CMakeFiles/untitled.dir/Act1.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Act1.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Act1.cpp.o -MF CMakeFiles/untitled.dir/Act1.cpp.o.d -o CMakeFiles/untitled.dir/Act1.cpp.o -c /Users/m.asadova/CLionProjects/act3/Act1.cpp
+
+CMakeFiles/untitled.dir/Act1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Act1.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/m.asadova/CLionProjects/act3/Act1.cpp > CMakeFiles/untitled.dir/Act1.cpp.i
+
+CMakeFiles/untitled.dir/Act1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Act1.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/m.asadova/CLionProjects/act3/Act1.cpp -o CMakeFiles/untitled.dir/Act1.cpp.s
+
+CMakeFiles/untitled.dir/Dice.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Dice.cpp.o: /Users/m.asadova/CLionProjects/act3/Dice.cpp
+CMakeFiles/untitled.dir/Dice.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/Dice.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/Dice.cpp.o -MF CMakeFiles/untitled.dir/Dice.cpp.o.d -o CMakeFiles/untitled.dir/Dice.cpp.o -c /Users/m.asadova/CLionProjects/act3/Dice.cpp
+
+CMakeFiles/untitled.dir/Dice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Dice.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/m.asadova/CLionProjects/act3/Dice.cpp > CMakeFiles/untitled.dir/Dice.cpp.i
+
+CMakeFiles/untitled.dir/Dice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Dice.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/m.asadova/CLionProjects/act3/Dice.cpp -o CMakeFiles/untitled.dir/Dice.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
-"CMakeFiles/untitled.dir/Act_1.cpp.o" \
-"CMakeFiles/untitled.dir/Act_2.cpp.o"
+"CMakeFiles/untitled.dir/Game.cpp.o" \
+"CMakeFiles/untitled.dir/Act_3.cpp.o" \
+"CMakeFiles/untitled.dir/Act2.cpp.o" \
+"CMakeFiles/untitled.dir/Act1.cpp.o" \
+"CMakeFiles/untitled.dir/Dice.cpp.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
-untitled: CMakeFiles/untitled.dir/Act_1.cpp.o
-untitled: CMakeFiles/untitled.dir/Act_2.cpp.o
+untitled: CMakeFiles/untitled.dir/Game.cpp.o
+untitled: CMakeFiles/untitled.dir/Act_3.cpp.o
+untitled: CMakeFiles/untitled.dir/Act2.cpp.o
+untitled: CMakeFiles/untitled.dir/Act1.cpp.o
+untitled: CMakeFiles/untitled.dir/Dice.cpp.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/m.asadova/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +172,6 @@ CMakeFiles/untitled.dir/clean:
 .PHONY : CMakeFiles/untitled.dir/clean
 
 CMakeFiles/untitled.dir/depend:
-	cd /Users/m.asadova/CLionProjects/untitled/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/m.asadova/CLionProjects/untitled /Users/m.asadova/CLionProjects/untitled /Users/m.asadova/CLionProjects/untitled/cmake-build-debug /Users/m.asadova/CLionProjects/untitled/cmake-build-debug /Users/m.asadova/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/m.asadova/CLionProjects/act3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/m.asadova/CLionProjects/act3 /Users/m.asadova/CLionProjects/act3 /Users/m.asadova/CLionProjects/act3/cmake-build-debug /Users/m.asadova/CLionProjects/act3/cmake-build-debug /Users/m.asadova/CLionProjects/act3/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/untitled.dir/depend
 

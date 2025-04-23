@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/m.asadova/CLionProjects/untitled/Act 1.cpp" "CMakeFiles/untitled.dir/Act_1.cpp.o" "gcc" "CMakeFiles/untitled.dir/Act_1.cpp.o.d"
-  "/Users/m.asadova/CLionProjects/untitled/Act 2.cpp" "CMakeFiles/untitled.dir/Act_2.cpp.o" "gcc" "CMakeFiles/untitled.dir/Act_2.cpp.o.d"
+  "/Users/m.asadova/CLionProjects/act3/Act1.cpp" "CMakeFiles/untitled.dir/Act1.cpp.o" "gcc" "CMakeFiles/untitled.dir/Act1.cpp.o.d"
+  "/Users/m.asadova/CLionProjects/act3/Act2.cpp" "CMakeFiles/untitled.dir/Act2.cpp.o" "gcc" "CMakeFiles/untitled.dir/Act2.cpp.o.d"
+  "/Users/m.asadova/CLionProjects/act3/Act_3.cpp" "CMakeFiles/untitled.dir/Act_3.cpp.o" "gcc" "CMakeFiles/untitled.dir/Act_3.cpp.o.d"
+  "/Users/m.asadova/CLionProjects/act3/Dice.cpp" "CMakeFiles/untitled.dir/Dice.cpp.o" "gcc" "CMakeFiles/untitled.dir/Dice.cpp.o.d"
+  "/Users/m.asadova/CLionProjects/act3/Game.cpp" "CMakeFiles/untitled.dir/Game.cpp.o" "gcc" "CMakeFiles/untitled.dir/Game.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
